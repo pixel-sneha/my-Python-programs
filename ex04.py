@@ -25,3 +25,22 @@ elif wind >=32 and wind<= 63:
 else:
     status = "Storm"
 print(f"status = {status}")
+
+#You are given a code which gets as input two numbers n1 and n2 and a character op.
+#The possible values for op are '+', '-', '/' and '*'
+#set the variable result based on the conditions
+
+n1 = int(input())
+n2 = int(input()) 
+op = input() 
+result = 0
+if op=='+':
+    result = n1+n2
+elif op=='-':
+    result = n1 - n2
+elif op=='/':
+    result = n1 / n2
+elif op=='*':
+    result = n1 * n2
+
+print(f"result = {result}")
