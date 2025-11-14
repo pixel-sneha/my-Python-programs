@@ -13,4 +13,14 @@ for i in range(num):
     printfunc()
     if i>=num:
         break
+#Write a program that gets two inputs, numbers.
+#Create a function that gets two arguments
+#calculates the product of them and prints it
+def addNum(val1,val2):
+    total = val1 * val2
+    print(f"{total}")
+
+val1 = int(input())
+val2 = int(input())
+addNum(val1,val2)
 
