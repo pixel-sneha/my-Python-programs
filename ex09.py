@@ -28,6 +28,24 @@ def is_valid(username, password):
             return False
     elif username=="admin":
         return True
-
     else:
         return False
+
+#Create a function named values that receives a list as an argument 
+#and prints all of the items in the list one after the other.
+def values(lst):
+    length = len(lst)
+    for i in range(length):
+        print(f"{lst[i]}")
+
+#Create a function named change_element that will return a modified list 
+#by changing the element in an index with the value of new_element
+
+def change_element(lst, index, new_element):
+    # Write code here
+    for i in range(len(lst)):
+        if i == index:
+            lst[i] = new_element
+            break
+    print(lst)
+    
