@@ -49,3 +49,10 @@ def change_element(lst, index, new_element):
             break
     print(lst)
     
+def prod(lst):
+    # Write a function named prod which gets a list of numbers as argument 
+    #and returns the product of all the numbers in the list.
+    product = 1
+    for i in range(len(lst)):
+        product *= lst[i]
+    return product
