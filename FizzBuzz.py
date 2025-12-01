@@ -1,8 +1,3 @@
-#Add a function named fizzbuzz that gets one number (int) as an argument, and:
-#If the number is divisible by 3, return "Fizz".
-#If the number is divisible by 7, return "Buzz".
-#If the number is divisible by both 3 and 7, return "FizzBuzz".
-#If none of the above conditions are met, return the number itself in a string format.
 print("Welcome to FizzBuzz!")
 
 def fizzbuzz(num):
@@ -13,9 +8,14 @@ def fizzbuzz(num):
     elif num%3==0:
         return "Fizz"
     else:
-        return str(num)
-    
-num = int(input())
-output = fizzbuzz(num)
-#string_num = str(num)
-print(output)
+        if "3" in str(num):
+            return "Almost Fizz"
+        else:
+            return str(num)
+
+print("Enter number of iterations: ")
+iteration = int(input())
+for i in range(1,iteration+1):
+    num = i
+    output = fizzbuzz(num)
+    print(output)
