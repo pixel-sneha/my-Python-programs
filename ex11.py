@@ -23,3 +23,14 @@ def whatToBuy(prices, quantities, restriction, names):
     new_list.sort()
     return [new_list, total_names]
     
+
+# Create a program that receives a string as input
+#it prints how many times the character p (or P) is in the string.
+#Some chars might be uppercase, use char.lower() to convert it to lowercase
+text = input()
+word_count = 0
+for i in range(len(text)):
+    if text[i] == 'p' or text[i] == 'P':
+        text[i].lower()
+        word_count += 1
+print(word_count)
