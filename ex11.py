@@ -34,3 +34,26 @@ for i in range(len(text)):
         text[i].lower()
         word_count += 1
 print(word_count)
+
+#Write a program that takes two inputs: a text string and a delimiter character.
+#The program should split the text by whitespace into words, 
+#join these words using the delimited character and print the resulting string.
+text = input()
+delimiter = input()
+updated_text = text.split()
+final_text = delimiter.join(updated_text)
+print(final_text)
+
+#Create a program that receives a list as input and prints the following sliced list:
+#For odd-length lists: take the middle item and one item on each side (3 items total)
+#For even-length lists: take the two middle items
+#When dividing numbers use // because list slicing only works with whole numbers.
+
+lst = input().split(",")
+size = len(lst)
+middle = size//2
+length_list = []
+if size%2==0:
+    print(lst[middle-1: middle+1])
+else:
+    print(lst[middle-1 : middle+2])
