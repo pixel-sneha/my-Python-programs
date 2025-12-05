@@ -13,3 +13,21 @@ size = len(lst)//2
 print(lst[1::3])
 print(lst[5::-1])
 print(lst[size::2])
+
+#Create a function that Concatenate the list with itself (list + list).
+#Repeats the resulting list repeats times using the * operator. And Return the final pattern.
+def create_pattern(numbers, repeats):
+    concat_list = numbers + numbers
+    final_list = concat_list * repeats
+    return final_list
+
+#Create a program that receives two lists and prints a new list of 
+#all elements that are in the first list but NOT in the second list.
+lst1 = input().split(",")
+lst2 = input().split(",")
+final_list = []
+for i in lst1:
+    if i not in lst2:
+        final_list.append(i)
+print(final_list)
+
