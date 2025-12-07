@@ -24,4 +24,13 @@ while True:
         else:
             print("No expenses recorded yet.")
 
+    if choice == 3:
+        if expense:
+            total_sum = sum(expense)
+            print(f"Total expense: {total_sum}")
+            avg_expense = total_sum / len(expense)
+            print(f"Average expense: {avg_expense}")
+        else:
+            print("No expenses recorded yet.")
+
             
