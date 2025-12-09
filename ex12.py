@@ -31,3 +31,22 @@ for i in lst1:
         final_list.append(i)
 print(final_list)
 
+#Write a Python program that performs the following tasks:
+#Assign values to three variables name, age, and city in a single line. Set name to "Alice", age to 30, and city to "New York".
+#Assign the value 100 to three variables x, y, and z in a single line.
+#Create a list named colors containing the values "red", "green", and "blue". Assign these values to three variables color1, color2, and color3 in a single line.
+
+# Assign values to name, age, and city
+name,age,city = "Alice",30,"New York"
+
+# Assign 100 to x, y, and z
+x = y = z = 100
+
+# Create a list of colors and assign them to color1, color2, and color3
+colors = ["red", "green", "blue"]
+color1, color2, color3 = colors
+
+# Output
+print(f"Name: {name}, Age: {age}, City: {city}")
+print(f"x: {x}, y: {y}, z: {z}")
+print(f"Colors: {color1}, {color2}, {color3}")
