@@ -26,3 +26,14 @@ a_range = range(1,6)
 print(list(a_tuple))
 print(list(a_string))
 print(list(a_range))
+
+#Create a function named create_student_dict that takes three parameters: name, age, and major. 
+#The function should return a dictionary where the keys are "name", "age", and "major", 
+#and the values are the corresponding values passed to the function.
+def create_student_dict(name, age, major):
+    dictionary = {
+        "name": name,
+        "age": age,
+        "major": major
+    }
+    return dictionary
