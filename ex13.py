@@ -18,3 +18,11 @@ def calculate_discount(price, discount_percentage):
     discount_amount = price * (discount_percentage / 100)
     discounted_price = price - discount_amount
     return round(discounted_price, 2)
+
+#Convert the following data into lists using the list() function:
+a_tuple = (10,20,30)
+a_string = "python"
+a_range = range(1,6)
+print(list(a_tuple))
+print(list(a_string))
+print(list(a_range))
