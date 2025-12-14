@@ -43,3 +43,10 @@ def create_student_dict(name, age, major):
 
 def get_capital(country_capitals, country_name):
     return country_capitals[country_name]
+
+def update_employee_info(employee_dict, key, value):
+    # Update the dictionary with the new key and value
+    employee_dict[key] = value
+    
+    # Return the updated dictionary
+    return employee_dict
