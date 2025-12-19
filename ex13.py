@@ -50,3 +50,15 @@ def update_employee_info(employee_dict, key, value):
     
     # Return the updated dictionary
     return employee_dict
+
+
+# Recipe Manager
+recipe_book = {
+    "Pancakes": ["flour", "milk", "eggs", "sugar"],
+    "Salad": ["lettuce", "tomato", "cucumber", "olive oil"],
+    
+}
+print(recipe_book["Pancakes"])
+recipe_book["Smoothie"] = ["banana", "milk", "honey"]
+recipe_book["Smoothie"] = ["banana", "milk", "honey", "blueberries"]
+print(recipe_book)
