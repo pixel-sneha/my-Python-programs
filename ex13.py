@@ -62,3 +62,13 @@ print(recipe_book["Pancakes"])
 recipe_book["Smoothie"] = ["banana", "milk", "honey"]
 recipe_book["Smoothie"] = ["banana", "milk", "honey", "blueberries"]
 print(recipe_book)
+
+#Create a function named create_book_dict that takes three parameters: title, author, and year. The function should return a dictionary where the keys are "title", "author", and "year",
+#and the values are the corresponding values passed to the function.
+def create_book_dict(title, author, year):
+    book_dict = {
+        "title" : title,
+        "author" : author,
+        "year" : year
+    }
+    return book_dict
