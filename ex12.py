@@ -4,6 +4,8 @@ if len(input_list) >= 5:
 else:
     print([input_list[0], input_list[len(input_list) - 1]])
 
+
+
 #Create a program that receives a list as input (given) and prints three new lists based on the following slicing operations:
 #A list containing every third element, starting from index 1 (the second element)
 #A list containing all the elements from the 6th element to the 1st in reverse order
@@ -14,12 +16,15 @@ print(lst[1::3])
 print(lst[5::-1])
 print(lst[size::2])
 
+
+
 #Create a function that Concatenate the list with itself (list + list).
 #Repeats the resulting list repeats times using the * operator. And Return the final pattern.
 def create_pattern(numbers, repeats):
     concat_list = numbers + numbers
     final_list = concat_list * repeats
     return final_list
+    
 
 #Create a program that receives two lists and prints a new list of 
 #all elements that are in the first list but NOT in the second list.
@@ -38,18 +43,16 @@ print(final_list)
 
 # Assign values to name, age, and city
 name,age,city = "Alice",30,"New York"
-
 # Assign 100 to x, y, and z
 x = y = z = 100
 
 # Create a list of colors and assign them to color1, color2, and color3
 colors = ["red", "green", "blue"]
 color1, color2, color3 = colors
-
-# Output
 print(f"Name: {name}, Age: {age}, City: {city}")
 print(f"x: {x}, y: {y}, z: {z}")
 print(f"Colors: {color1}, {color2}, {color3}")
+
 
 #Write a Python program that demonstrates the use of placeholder variables
 # Loop 5 times using a placeholder variable
