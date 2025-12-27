@@ -1,3 +1,4 @@
+#Contact book application
 def display_menu(): 
     print("Contact Book Menu:")
     print("1. Add Contact")
@@ -7,3 +8,5 @@ def display_menu():
     print("5. List All Contacts")
     print("6. Exit")
     return display_menu
+
+
