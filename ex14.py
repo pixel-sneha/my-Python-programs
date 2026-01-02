@@ -26,3 +26,16 @@ def print_employee_details(employee_data):
             print(f'{key}: {value}')
     #suppose you want capitalized key here, then use
             print(f'{key.capitalize()}: {value}')
+            
+
+#Create a function named frequency_counter that takes a list data_list as an argument. 
+#The function should count the frequency of each item in the list and return a dictionary 
+#where the keys are the unique items from the list and the values are the counts of how many times each item appears.
+def frequency_counter(data_list):
+    count_list = {}
+    for i in data_list:
+        if i in count_list:
+            count_list[i] += 1
+        else:
+            count_list[i] = 1
+    return count_list
