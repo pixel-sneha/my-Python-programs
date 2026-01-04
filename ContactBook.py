@@ -35,3 +35,30 @@ def view_contact(contact_book):
         print("Contact not found!")
         return
 
+def edit_contact(contact_book):
+    user = input()
+    if user in contact_book:
+        new_phone = input()
+        new_email = input()
+        new_address = input()
+
+        if new_phone:
+            contact_book[user]['phone'] = new_phone
+        if new_email:
+            contact_book[user]['email'] = new_email
+        if new_address:
+            contact_book[user]['address'] = new_address
+            
+        print("Contact updated successfully!")
+        
+    else:
+        print("Contact not found!")
+        return
+
+def delete_contact(contact_book):
+    name = input()
+    if name in contact_book:
+        update_dict = contact_book.pop(name)
+        print("Contact deleted successfully!")
+    else:
+        print("Contact not found!")
