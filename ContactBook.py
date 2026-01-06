@@ -62,3 +62,15 @@ def delete_contact(contact_book):
         print("Contact deleted successfully!")
     else:
         print("Contact not found!")
+
+def list_all_contacts(contact_book):
+    if not contact_book:
+        print("No contacts available.")
+        return
+    else:
+        for name, details in contact_book.items():
+            print(f"Name: {name}")
+            print(f"Phone: {details['phone']}")
+            print(f"Email: {details['email']}")
+            print(f"Address: {details['address']}")
+            print() 
