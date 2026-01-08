@@ -8,6 +8,7 @@ def display_menu():
     print("6. Exit")
 
 def add_contact(contact_book):
+    print("Enter a user name")
     name = input()
     if name in contact_book:
         print("Contact already exists!")
@@ -24,6 +25,7 @@ def add_contact(contact_book):
     print("Contact added successfully!")
 
 def view_contact(contact_book):
+    print("Enter user name:")
     contact = input()
     if contact in contact_book:
         print(f"Name: {contact}")
@@ -35,6 +37,7 @@ def view_contact(contact_book):
         return
 
 def edit_contact(contact_book):
+    print("Enter user to be edited")
     user = input()
     if user in contact_book:
         new_phone = input()
@@ -55,6 +58,7 @@ def edit_contact(contact_book):
         return
 
 def delete_contact(contact_book):
+    print("Enter the name to be deleted")
     name = input()
     if name in contact_book:
         update_dict = contact_book.pop(name)
@@ -76,7 +80,9 @@ def list_all_contacts(contact_book):
 
 contact_book = {}
 while True:
+    print("Welcome to Contact Book info")
     display_menu()
+    print("Enter your choice:")
     choice = input()
     if choice == "1":
         add_contact(contact_book)
