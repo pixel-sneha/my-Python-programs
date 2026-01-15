@@ -5,8 +5,8 @@ def reverse(lst):
         revlst.append(lst[i])
     return(revlst)
 
-Each test case has one input - an odd whole number.
-Your task is to print n - pyramid using * 
+#Each test case has one input - an odd whole number.
+#Your task is to print n - pyramid using * 
 n = int(input())
 for stars in range(1, n + 1, 2):
     if n<=0 or n%2==0:
